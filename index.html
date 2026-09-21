@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -110,8 +111,8 @@
                 
                 if (!articulo) return; // Ignorar filas vacías
 
-                // Llave compuesta: Artículo + Almacén + Clase Movimiento
-                let key = `${articulo}_${almacén}_${claseMov}`;
+                // Llave compuesta: Artículo + Almacén + Clase Movimiento (Corregido el acento en la variable almacen)
+                let key = `${articulo}_${almacen}_${claseMov}`;
                 let dateValue = parseSAPDate(fechaOriginal);
 
                 if (!groupedData[key]) {
